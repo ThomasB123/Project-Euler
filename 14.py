@@ -10,4 +10,22 @@ Although it has not been proved yet (Collatz Problem), it is thought that all st
 Which starting number, under one million, produces the longest chain?
 Note: Once the chain starts the terms are allowed to go above one million.
 '''
-# Answer = 
+# Answer = 837799
+
+longest = 1
+length = 1
+x = 1
+while x < 1000000:
+    n = x
+    collatz = 1
+    while n != 1:
+        if n%2 == 0:
+            n /= 2
+        else:
+            n = 3*n + 1
+        collatz += 1
+    if collatz > length:
+        length = collatz
+        longest = x
+    x += 1
+print(longest)
