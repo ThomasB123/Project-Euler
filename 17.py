@@ -9,3 +9,11 @@ For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one 
 The use of "and" when writing out numbers is in compliance with British usage.
 '''
 # Answer: 
+
+units = {1:3,2:3,3:5,4:4,5:4,6:3,7:5,8:5,9:4}
+teens = {10:3,11:6,12:6,13:8,14:8}
+tens = {2:6,3:6,4:5,5:5,6:5,7:7,8:6,9:6}
+hundreds = {1:3,2:3,3:5,4:4,5:4,6:3,7:5,8:5,9:4}
+
+for x in range(1,1001):
+    pass
