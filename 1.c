@@ -17,6 +17,6 @@ int main()
             out += i;
         }
     }
-    printf("Answer: %d\n", out);
+    printf("%d\n", out);
     return 0;
 }
