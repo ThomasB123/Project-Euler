@@ -18,7 +18,6 @@ int main()
     int temp;
     while (b < x)
     {
-        //printf("%d\n",b);
         if (b % 2 == 0)
         {
             out += b;
@@ -27,6 +26,6 @@ int main()
         a = b;
         b += temp;
     }
-    printf("%d\n",out);
+    printf("%d\n", out);
     return 0;
 }
