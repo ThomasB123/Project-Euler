@@ -6,23 +6,22 @@ What is the largest prime factor of the number 600851475143 ?
 // Answer: 6857
 
 #include <stdio.h>
-#include <stdbool.h>
 #include <math.h>
 long num = 600851475143;
 int x;
-bool factor;
+int factor;
 int main(){
     x = floor(sqrt(num));
     while (x > 0)
     {
         if (num % x == 0)
         {
-            factor = true;
+            factor = 1;
             for (int i = 2; i < x; i++)
             {
                 if (x % i == 0)
                 {
-                    factor = false;
+                    factor = 0;
                 }
             }
             if (factor)
